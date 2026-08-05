@@ -130,12 +130,34 @@ The page is built so it holds with clean placeholders if none of these arrive.
 IMAGE REQUEST
   save as:  assets/hero-lot.jpg
   from:     assets/source/mom-uhaul.jpeg
-  treatment: Remove the loud "$19.95 MOVING?" U-Haul promo banner and any other promo clutter,
-             keeping the woman, the U-Haul truck, the brick building, the lawn and the business's
-             own sign exactly as they are. Warm, natural grade — bright day, slightly lifted
-             shadows, no heavy filter. Deliver two crops: a tall 4:5 for the desktop split hero and
-             a 3:2 for mobile. Full resolution, then I'll size down.
+  treatment: Keep the people, the truck, the building, the lot and the business's own sign as they
+             really are — this is a real place and the photo has to stay true to it.
+
+             Remove: the loud "$19.95 MOVING?" U-Haul promo banner and any other promo clutter.
+
+             Light: the source is harsh midday sun. Regrade toward warm late-afternoon light —
+             lower contrast, lifted shadows, recovered highlights, reduced micro-contrast so
+             nothing looks over-sharpened. Soft and warm, not crushed or filtered.
+
+             Color: pull the lawn green down hard — it's neon in the source. Take it to a calmer,
+             slightly olive green. Overall a touch less saturated and a touch warmer.
+
+             The sign: correct it back to its true colors — the blown-out midday exposure has
+             thrown off the blue of the interlocking-knot mark. Restore accurate color, don't
+             redesign the sign.
+
+             The building: do NOT rebuild, repaint, repoint or modernize the brick. The warm light
+             and the tighter crop below should do the work. Evening out blotchy sun-glare staining
+             is fine; making it a different, newer building is not.
+
+             Crops: tight enough that she and the truck dominate and the building sits soft in the
+             background. Deliver a tall 4:5 for the desktop split hero and a 3:2 for mobile. Full
+             resolution — I'll size down.
 ```
+
+If the retouch still fights the source, the cheapest real fix is a **new photo**: same spot, same
+people, an hour before sunset, shot on a phone in portrait. Warm low light on brown brick beats any
+amount of grading, and it stays completely honest.
 
 ```
 IMAGE REQUEST
