@@ -41,6 +41,11 @@
   --measure: 1240px;
   --edge: max(var(--gutter), calc((100vw - var(--measure)) / 2 + var(--gutter)));
 
+  /* Photographs get a wider measure than type. They overhang the text column
+     but still land on a margin, so the overhang reads as a choice. */
+  --measure-photo: 1600px;
+  --edge-photo: max(var(--gutter), calc((100vw - var(--measure-photo)) / 2));
+
   --rule: 1px solid var(--steel);
 }
 
@@ -343,10 +348,9 @@ a { color: inherit; }
     max-width: none;
   }
 
-  /* Photo hugs the right edge of the screen, filling its column. The whole
-     3:2 frame stays visible — nothing is cropped by the bleed. */
+  /* Photo overhangs the text measure and stops on the photo margin. */
   .hero__figure {
-    padding-inline: 0;
+    padding-inline: 0 var(--edge-photo);
     width: 100%;
     margin-inline-start: auto;
   }
@@ -398,13 +402,24 @@ a { color: inherit; }
 
 /* ── Photo block ───────────────────────────────────────────────────── */
 
-.shot { margin: 2.5rem 0 0; }
+/* Same rule as the hero photo: break out of the text measure, land on the
+   photo margin. */
+.shot {
+  margin: 2.5rem 0 0;
+  margin-inline: calc(var(--edge-photo) - var(--edge));
+}
 
+/* Letterboxed: at the photo measure a 16:9 frame would out-scale the hero
+   shot. The crop takes ceiling and floor, which is where the least is. */
 .shot__img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   background: var(--steel);
+}
+
+@media (min-width: 900px) {
+  .shot__img { aspect-ratio: 21 / 9; }
 }
 
 /* ── Price ─────────────────────────────────────────────────────────── */
