@@ -296,7 +296,12 @@ a { color: inherit; }
   color: var(--ink-soft);
 }
 
-.hero .cta { margin-top: 2rem; }
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
 
 .hero__hours {
   margin-top: 1rem;
