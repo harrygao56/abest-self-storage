@@ -10,9 +10,9 @@
   ┌────────────────────────────────────────────────────────────────────────┐
   │  PHONE NUMBER IS A PLACEHOLDER                                         │
   │                                                                        │
-  │  The real number is not confirmed yet. It appears 5 times below as     │
-  │  the display text "(630) XXX-XXXX" and 5 times as the link target      │
-  │  "tel:+1630XXXXXXX" — header, hero, price, visit, and sticky bar.      │
+  │  The real number is not confirmed yet. It appears 4 times below as     │
+  │  the display text "(630) XXX-XXXX" and 4 times as the link target      │
+  │  "tel:+1630XXXXXXX" — header, hero, visit, and the sticky bar.         │
   │                                                                        │
   │  To go live: find-and-replace both strings, then uncomment the         │
   │  "telephone" line in the JSON-LD block at the bottom of this file.     │
@@ -56,7 +56,6 @@
   <!-- ── Hero ─────────────────────────────────────────────────────────── -->
   <section class="hero" id="top">
     <div class="hero__text">
-      <p class="eyebrow">2333 Wisconsin Avenue</p>
       <h1 class="hero__head">Storage in Downers Grove, run by the family that owns it.</h1>
       <p class="hero__lede">
         Lockers from $48 a month, and your first month is free. U-Haul trucks
@@ -77,41 +76,21 @@
            width="1390" height="927"
            alt="The owner standing beside a U-Haul truck in the paved lot at A Best Self Storage, with the brick building and the business sign behind her."
            fetchpriority="high">
-      <figcaption class="caption">The owner, at our lot on Wisconsin Avenue</figcaption>
     </figure>
   </section>
 
   <!-- ── Services ─────────────────────────────────────────────────────── -->
   <section class="band">
     <div class="wrap">
-      <p class="eyebrow">One address for the whole move</p>
       <h2 class="head">Everything you need is in the same lot.</h2>
 
       <ul class="services">
-        <li class="service">
-          <h3 class="service__name">Lockers</h3>
-          <p class="service__note">Storage lockers starting at $48 a month.</p>
-        </li>
-        <li class="service">
-          <h3 class="service__name">Car storage</h3>
-          <p class="service__note">A place to keep a car you are not driving.</p>
-        </li>
-        <li class="service">
-          <h3 class="service__name">U-Haul trucks</h3>
-          <p class="service__note">We are an authorized U-Haul dealer, on site.</p>
-        </li>
-        <li class="service">
-          <h3 class="service__name">Moving supplies</h3>
-          <p class="service__note">Boxes, tape and blankets, so you skip a second stop.</p>
-        </li>
-        <li class="service">
-          <h3 class="service__name">Office space</h3>
-          <p class="service__note">Office space to rent, here at the building.</p>
-        </li>
-        <li class="service">
-          <h3 class="service__name">Warehousing</h3>
-          <p class="service__note">Warehouse space for inventory and equipment.</p>
-        </li>
+        <li class="service">Lockers</li>
+        <li class="service">Car storage</li>
+        <li class="service">U-Haul trucks</li>
+        <li class="service">Moving supplies</li>
+        <li class="service">Office space</li>
+        <li class="service">Warehousing</li>
       </ul>
     </div>
   </section>
@@ -119,7 +98,6 @@
   <!-- ── Inside ───────────────────────────────────────────────────────── -->
   <section class="band band--tight">
     <div class="wrap">
-      <p class="eyebrow">Inside</p>
       <h2 class="head">Concrete floors, steel doors, a number on every unit.</h2>
       <figure class="shot">
         <img class="shot__img"
@@ -129,30 +107,7 @@
              width="1400" height="788"
              alt="A corridor inside the facility, lined on both sides with galvanized steel roll-up doors, each marked with a blue unit number."
              loading="lazy">
-        <figcaption class="caption">The main corridor, unit doors on both sides</figcaption>
       </figure>
-    </div>
-  </section>
-
-  <!-- ── Price ────────────────────────────────────────────────────────── -->
-  <section class="band price">
-    <div class="wrap price__inner">
-      <div class="price__figure">
-        <span class="price__amount">$48</span>
-        <span class="price__unit">a month</span>
-      </div>
-      <div class="price__copy">
-        <p class="eyebrow">What it costs</p>
-        <h2 class="head">Your first month is free.</h2>
-        <p class="price__note">
-          Storage lockers start at $48 a month. Call and we will tell you what is
-          open, what size it is, and what it costs.
-        </p>
-        <a class="cta cta--quiet" href="tel:+1630XXXXXXX">
-          <span class="cta__label">Call</span>
-          <span class="cta__number">(630) XXX-XXXX</span>
-        </a>
-      </div>
     </div>
   </section>
 
@@ -160,16 +115,17 @@
   <section class="band">
     <div class="wrap pair">
       <article class="pair__item">
-        <p class="eyebrow">U-Haul</p>
         <h2 class="head head--sm">Pick up the truck where you keep your things.</h2>
         <p class="prose">
           We are an authorized U-Haul dealer. Trucks, boxes, tape and moving
           blankets are all here in the lot, so moving day does not turn into
           three errands across town.
         </p>
+        <p class="pair__link">
+          <a class="link" href="https://www.uhaul.com/Locations/Truck-Rentals-near-Downers-Grove-IL-60515/046561/" target="_blank" rel="noopener">See trucks and rates on U-Haul.com</a>
+        </p>
       </article>
       <article class="pair__item">
-        <p class="eyebrow">For businesses</p>
         <h2 class="head head--sm">Office and warehouse space, same address.</h2>
         <p class="prose">
           We rent office space and warehouse space here at the building. Good for
@@ -184,20 +140,23 @@
   <section class="band visit">
     <div class="wrap visit__inner">
       <div>
-        <p class="eyebrow">Visit us</p>
         <h2 class="head">2333 Wisconsin Avenue<br>Downers Grove, IL 60515</h2>
         <p class="visit__hours">Monday to Friday, 8am to 5pm</p>
         <p class="visit__links">
           <a class="link" href="https://www.google.com/maps/search/?api=1&query=2333+Wisconsin+Avenue+Downers+Grove+IL+60515" target="_blank" rel="noopener">Get directions</a>
         </p>
-      </div>
-      <div class="visit__call">
-        <p class="visit__prompt">The fastest way to get a unit is to call.</p>
         <a class="cta" href="tel:+1630XXXXXXX">
           <span class="cta__label">Call</span>
           <span class="cta__number">(630) XXX-XXXX</span>
         </a>
       </div>
+      <img class="visit__sign"
+           src="assets/front-sign.jpg"
+           srcset="assets/front-sign-900.jpg 900w, assets/front-sign.jpg 1448w"
+           sizes="(min-width: 860px) 46vw, 100vw"
+           width="1448" height="1086"
+           alt="The ground sign at the entrance, reading A Best Self Storage with the blue interlocking-knot mark and the street address."
+           loading="lazy">
     </div>
   </section>
 
