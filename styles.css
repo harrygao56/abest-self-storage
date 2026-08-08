@@ -337,12 +337,33 @@ a { color: inherit; }
 }
 
 .service {
-  padding-block: 1.1rem;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: start;
+  padding-block: 1.15rem;
   border-bottom: var(--rule);
+}
+
+.service__icon {
+  width: 30px;
+  height: 30px;
+  margin-top: -1px;
+  color: var(--knot);
+  stroke-width: 1.75;
+}
+
+.service__name {
   font-family: var(--display);
-  font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem);
+  font-size: clamp(1.0625rem, 1rem + 0.35vw, 1.1875rem);
   font-weight: 600;
   font-stretch: 100%;
+}
+
+.service__note {
+  margin-top: 0.15rem;
+  font-size: 0.9375rem;
+  color: var(--ink-soft);
 }
 
 @media (min-width: 720px) {
