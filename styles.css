@@ -127,6 +127,9 @@ a { color: inherit; }
   color: var(--ink-soft);
 }
 
+/* Keep the brand name from breaking across lines. */
+.nb { white-space: nowrap; }
+
 .link {
   color: var(--knot);
   text-decoration-thickness: 1px;
