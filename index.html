@@ -70,18 +70,13 @@
     </div>
 
     <figure class="hero__figure">
-      <picture>
-        <source media="(min-width: 900px)"
-                srcset="assets/hero-4x5-480.jpg 480w, assets/hero-4x5.jpg 752w"
-                sizes="50vw">
-        <img class="hero__img"
-             src="assets/hero-3x2-900.jpg"
-             srcset="assets/hero-3x2-900.jpg 900w, assets/hero-3x2.jpg 1390w"
-             sizes="100vw"
-             width="900" height="600"
-             alt="The owner standing beside a U-Haul truck in the paved lot at A Best Self Storage, with the brick building and the business sign behind her."
-             fetchpriority="high">
-      </picture>
+      <img class="hero__img"
+           src="assets/hero-3x2-900.jpg"
+           srcset="assets/hero-3x2-900.jpg 900w, assets/hero-3x2.jpg 1390w"
+           sizes="(min-width: 900px) 48vw, 100vw"
+           width="1390" height="927"
+           alt="The owner standing beside a U-Haul truck in the paved lot at A Best Self Storage, with the brick building and the business sign behind her."
+           fetchpriority="high">
       <figcaption class="caption">The owner, at our lot on Wisconsin Avenue</figcaption>
     </figure>
   </section>

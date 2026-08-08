@@ -330,7 +330,8 @@ a { color: inherit; }
 @media (min-width: 900px) {
   .hero {
     grid-template-columns: 1.08fr 0.92fr;
-    align-items: center;
+    /* Bottom-align so the caption rule and the hours line share a baseline. */
+    align-items: end;
     gap: clamp(2rem, 4vw, 4rem);
     padding-block: clamp(2.5rem, 4vw, 4.5rem);
   }
@@ -342,17 +343,13 @@ a { color: inherit; }
     max-width: none;
   }
 
-  /* Photo hugs the right edge of the screen. Width is derived from the
-     height cap so the 4:5 crop is never squeezed or over-cropped, and so
-     the call button always clears the fold on a laptop. */
+  /* Photo hugs the right edge of the screen, filling its column. The whole
+     3:2 frame stays visible — nothing is cropped by the bleed. */
   .hero__figure {
     padding-inline: 0;
     width: 100%;
-    max-width: calc(min(68vh, 660px) * 0.8);
     margin-inline-start: auto;
   }
-
-  .hero__img { aspect-ratio: 4 / 5; }
 }
 
 /* ── Bands ─────────────────────────────────────────────────────────── */
