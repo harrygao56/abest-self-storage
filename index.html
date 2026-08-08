@@ -6,21 +6,6 @@
 <title>A Best Self Storage — Downers Grove, IL | Storage & U-Haul</title>
 <meta name="description" content="Family-run storage in Downers Grove, Illinois. Lockers from $48 a month, first month free. U-Haul trucks, moving supplies, car storage, and office and warehouse space at 2333 Wisconsin Avenue.">
 
-<!--
-  ┌────────────────────────────────────────────────────────────────────────┐
-  │  PHONE NUMBER IS A PLACEHOLDER                                         │
-  │                                                                        │
-  │  The real number is not confirmed yet. It appears 4 times below as     │
-  │  the display text "(630) XXX-XXXX" and 4 times as the link target      │
-  │  "tel:+1630XXXXXXX" — header, hero, visit, and the sticky bar.         │
-  │                                                                        │
-  │  To go live: find-and-replace both strings, then uncomment the         │
-  │  "telephone" line in the JSON-LD block at the bottom of this file.     │
-  │                                                                        │
-  │  630 is genuinely Downers Grove's area code. The XXX is left visible   │
-  │  on purpose so nobody dials a wrong number in the meantime.            │
-  └────────────────────────────────────────────────────────────────────────┘
--->
 
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
@@ -44,9 +29,9 @@
       <img class="brand__mark" src="assets/logo-512.png" alt="" width="512" height="512">
       <span class="brand__name">A Best Self Storage</span>
     </a>
-    <a class="masthead__call" href="tel:+1630XXXXXXX">
+    <a class="masthead__call" href="tel:+17086536017">
       <span class="masthead__call-label">Call</span>
-      <span class="masthead__call-number">(630) XXX-XXXX</span>
+      <span class="masthead__call-number">(708) 653-6017</span>
     </a>
   </div>
 </header>
@@ -62,9 +47,9 @@
         <span class="nb">U-Haul</span> trucks and moving supplies in the same&nbsp;lot.
       </p>
       <div class="hero__actions">
-        <a class="cta" href="tel:+1630XXXXXXX">
+        <a class="cta" href="tel:+17086536017">
           <span class="cta__label">Call</span>
-          <span class="cta__number">(630) XXX-XXXX</span>
+          <span class="cta__number">(708) 653-6017</span>
         </a>
         <a class="cta cta--ghost" href="https://www.uhaul.com/Locations/Truck-Rentals-near-Downers-Grove-IL-60515/046561/" target="_blank" rel="noopener">
           <span>Reserve a <span class="nb">U-Haul</span> truck</span>
@@ -192,11 +177,11 @@
         <h2 class="head">2333 Wisconsin Avenue<br>Downers Grove, IL 60515</h2>
         <p class="visit__hours">Monday to Friday, 8am to 5pm</p>
         <p class="visit__links">
-          <a class="link" href="https://www.google.com/maps/search/?api=1&query=2333+Wisconsin+Avenue+Downers+Grove+IL+60515" target="_blank" rel="noopener">Get directions</a>
+          <a class="link" href="https://www.google.com/maps/place/A+Best+Self+Storage+of+Illinois+LLC/@41.7891296,-88.0412698,17z/data=!3m1!4b1!4m6!3m5!1s0x880e51ae08a640c1:0xc1d6944587da6994!8m2!3d41.7891296!4d-88.0412698!16s%2Fg%2F1tggv2__" target="_blank" rel="noopener">Get directions</a>
         </p>
-        <a class="cta" href="tel:+1630XXXXXXX">
+        <a class="cta" href="tel:+17086536017">
           <span class="cta__label">Call</span>
-          <span class="cta__number">(630) XXX-XXXX</span>
+          <span class="cta__number">(708) 653-6017</span>
         </a>
       </div>
       <img class="visit__sign"
@@ -219,9 +204,9 @@
 </footer>
 
 <!-- Sticky call bar, small screens only -->
-<a class="callbar" href="tel:+1630XXXXXXX">
+<a class="callbar" href="tel:+17086536017">
   <span class="callbar__label">Call</span>
-  <span class="callbar__number">(630) XXX-XXXX</span>
+  <span class="callbar__number">(708) 653-6017</span>
 </a>
 
 <script type="application/ld+json">
@@ -230,6 +215,8 @@
   "@type": "SelfStorage",
   "name": "A Best Self Storage of Illinois LLC",
   "url": "https://abestselfstorageofillinois.com/",
+  "telephone": "+1-708-653-6017",
+  "hasMap": "https://www.google.com/maps/place/A+Best+Self+Storage+of+Illinois+LLC/@41.7891296,-88.0412698,17z/data=!3m1!4b1!4m6!3m5!1s0x880e51ae08a640c1:0xc1d6944587da6994!8m2!3d41.7891296!4d-88.0412698!16s%2Fg%2F1tggv2__",
   "image": "https://abestselfstorageofillinois.com/assets/hero-3x2.jpg",
   "address": {
     "@type": "PostalAddress",
@@ -238,6 +225,11 @@
     "addressRegion": "IL",
     "postalCode": "60515",
     "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.7891296,
+    "longitude": -88.0412698
   },
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
@@ -248,14 +240,6 @@
   "priceRange": "$48+"
 }
 </script>
-<!--
-  JSON-LD: once the real phone number is confirmed, add this line inside the
-  object above (after "url"), so search engines show a call button:
-
-      "telephone": "+1-630-XXX-XXXX",
-
-  It is deliberately omitted for now rather than published as a fake number.
--->
 
 </body>
 </html>
