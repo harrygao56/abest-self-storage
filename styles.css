@@ -171,6 +171,29 @@ a { color: inherit; }
   letter-spacing: 0.01em;
 }
 
+/* Secondary action. Hollow on purpose: the phone stays the loudest thing
+   on the page, and this one leaves the site. */
+.cta--ghost {
+  align-items: center;
+  gap: 0.5rem;
+  background: transparent;
+  color: var(--knot);
+  box-shadow: inset 0 0 0 1px var(--knot);
+  font-size: 1rem;
+  font-weight: 600;
+  font-stretch: 100%;
+}
+.cta--ghost:hover {
+  background: var(--knot);
+  color: var(--white);
+}
+
+.cta__arrow {
+  width: 17px;
+  height: 17px;
+  flex: none;
+}
+
 /* ── Masthead ──────────────────────────────────────────────────────── */
 
 .masthead {
