@@ -508,6 +508,31 @@ a { color: inherit; }
   color: var(--ink-soft);
 }
 
+.footer__sister {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-top: 1.75rem;
+  padding-block: 0.25rem;          /* keeps the row a comfortable tap target */
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-stretch: 88%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.footer__sister:hover { color: var(--knot); }
+
+/* The mark's outer arms are hairline-thin; below ~48px they stop resolving. */
+.footer__mark {
+  width: 48px;
+  height: auto;
+  flex: none;
+}
+
 /* ── Sticky call bar (small screens) ───────────────────────────────── */
 
 .callbar {
