@@ -218,9 +218,10 @@ a { color: inherit; }
   text-decoration: none;
 }
 
+/* The mark is 1.105:1, not square — pin the height and let width follow. */
 .brand__mark {
-  width: 34px;
   height: 34px;
+  width: auto;
   flex: none;
 }
 
@@ -511,26 +512,17 @@ a { color: inherit; }
 .footer__sister {
   display: inline-flex;
   align-items: center;
-  gap: 0.625rem;
   margin-top: 1.75rem;
-  padding-block: 0.25rem;          /* keeps the row a comfortable tap target */
-  text-decoration: none;
-  font-family: var(--display);
-  font-size: 0.8125rem;
-  font-weight: 600;
-  font-stretch: 88%;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
+  padding-block: 0.5rem;           /* keeps the row a comfortable tap target */
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
 }
 
-.footer__sister:hover { color: var(--knot); }
+.footer__sister:hover { opacity: 1; }
 
-/* The mark's outer arms are hairline-thin; below ~48px they stop resolving. */
-.footer__mark {
-  width: 48px;
+.footer__lockup {
+  width: 150px;
   height: auto;
-  flex: none;
 }
 
 /* ── Sticky call bar (small screens) ───────────────────────────────── */
