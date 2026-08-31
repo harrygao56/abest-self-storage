@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://harrygao56.github.io/abest-self-storage/sitemap.xml
+Sitemap: https://www.abestselfstorageofillinois.com/sitemap.xml
